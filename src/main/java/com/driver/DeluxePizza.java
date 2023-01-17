@@ -32,12 +32,12 @@ public class DeluxePizza extends Pizza {
     if(isVeg){
 
          price=getPrice()+80+70;
-        bill="Base Price Of The Pizza: "+price;
+        bill="Base Price Of The Pizza: "+price+"\n";
     }
     if(!isVeg){
          price=getPrice()+80+120;
 
-        bill="Base Price Of The Pizza: "+price;
+        bill="Base Price Of The Pizza: "+price+"\n";
     }
 
         if(paper_bag_price>0){
