@@ -41,7 +41,7 @@ public class DeluxePizza extends Pizza {
     }
 
         if(paper_bag_price>0){
-            bill = bill +"\n"+ paperbag + "\n";
+            bill = bill + paperbag + "\n";
         }
 
         int total=price+paper_bag_price;
