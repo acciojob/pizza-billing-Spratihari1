@@ -25,26 +25,40 @@ public class DeluxePizza extends Pizza {
 
 
     }
+    public int getPrice(){
+
+        if(isVeg){
+            //  total=price;
+            //   System.out.println(total+" "+ price);
+            //  System.out.println(paper_bag_price);
+
+            return 300+80+70;
+        }
+
+
+        else   return 400+80+120;
+    }
+
 
 
     public String getBill(){
         int price=0;
     if(isVeg){
 
-         price=getPrice()+80+70;
-        bill="Base Price Of The Pizza: "+price+"\n";
+        // price= getPrice()+80+70;
+        bill="Base Price Of The Pizza: "+getPrice()+"\n";
     }
     if(!isVeg){
-         price=getPrice()+80+120;
+      //   price= getPrice()+80+120;
 
-        bill="Base Price Of The Pizza: "+price+"\n";
+        bill="Base Price Of The Pizza: "+getPrice()+"\n";
     }
 
         if(paper_bag_price>0){
             bill = bill + paperbag + "\n";
         }
 
-        int total=price+paper_bag_price;
+        int total=getPrice()+paper_bag_price;
         bill=bill+"Total Price: "+total;
 
 
